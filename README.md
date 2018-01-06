@@ -11,3 +11,7 @@ The R script run_analysis.R performs the following tasks on the Samsung data:
 4. Appropriately labels the data set with descriptive variable names. Each column of the data is named using the colnames() command. The variable names have been chosen such that they are as descriptive as possilbe. For example the variable name meanofbodyaccelerationintimedomainandxdirection represents the Mean of Body Acceleration in Time Domain and X-direction.
 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. This is achieved using the group_by() and summarize() commands from the dplyr package. The resulting data.frame() has 6*30=180 columns. 
+
+At the end, the new data set is saved as tidy_data.txt using the write.table() command. 
+
+There is only one script (run_analysis.R) in this repository. All the tasks described above will be performed automatically by running this script. 
